@@ -3,67 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="index.css">
     <title>Navigation</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo"> <img src="images/logo.png" alt="logo"></div>
-        <div class="center">
-             <ul id="menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Nos gares</a></li>
-                <li><a href="#">Réservation</a></li>
-                <li><a href="#">Actualité</a></li>
-                <li><a href="#">Contacts</a></li>
+        <nav class="navbar">
+            <div> <img src="images/logo.png" alt="logo" class="logo-img"></div>
+       
+             <ul class="navbar__menu">
+                <li><a href="index.html">ACCEUIL</a></li>
+                <li><a href="a propos.html">A PROPOS</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="nos_gares.html">NOS GARES</a></li>
+                <li><a href="reservation.html">RESERVATION</a></li>
+                <li><a href="Actualite.html">ACTUALITES</a></li>
+                <li><a href="contacts.html" class="navbar__menu--brdbtm">CONTACTS</a></li>
             </ul>
-             </div>
-           <div id="bouton">
-        <a href="formulaire.html"><button>S'inscrire</button></a>
+        
+           <div id="btn" class="hide">
+        <a href="formulaire.html"><button>S'inscrire</button> </a>
             </div>
         </nav>
     </header>
     <main>
-        <h1>Contacts</h1>
-        <div class="img_bus">
-            <!-- <img src="images/images.jpeg" alt="image bus"> -->
+        <div class="banner-img">
+            <h1>Contacts</h1>
         </div>
+        <section class="section1">
+            <div class="card-container">
+                  <div class="card">
+                      <h3 class="card-titre color-orange">ADRESSE</h3>
+                      <p class="card-desc">otchoumou1.kouamelan@uvci.edu.ci</p>
+                      <p class="card-desc">aminata11.traore@uvci.edu.ci</p>
+                      </div>
+                  <div class="card">
+                      <h3 class="card-titre color-orange">TELEPHONE</h3>
+                      <p class="card-desc">0505633685</p>
+                      <p class="card-desc">0709875141</p>
+                  </div>
+                  <div class="card">
+                      <h3 class="card-titre color-orange">LOCALISATION</h3>
+                      <p class="card-desc">Abidjan Bp 0254,Koumassi</p>
+                  </div>
+              </div>
+          </section>
+      
+          <section class="form-position">
+              <form action="" class="contact-form">
+              <h1 class="color-orange">CONTACTEZ NOUS </h1>
+              <input type="text" id="name" placeholder="Name" required>
+              <input type="email" id="email" placeholder="E-mail" required>
+              <input type="number" id="phone" placeholder="Phone Number" required>
+              <input type="text" id="name" placeholder="Sujet" required>
+              <textarea name="Message" id="message" placeholder="Message" height="fixed"></textarea>
+              <div class="button">
+                  <input type="submit" value="Envoyer">
+              </div>
+              </form>
+          </section>
+      
     </main>
-    <section class="section1">
-      <div class="card-container">
-        <div class="card">
-                <h3 class="card-titre">ADRESSE</h3>
-                <p class="card-desc">otchoumou1.kouamelan@uvci.edu.ci</p>
-                <p class="card-desc">aminata11.traore@uvci.edu.ci</p>
-            </div>
-            <div class="card">
-                <h3 class="card-titre">TELEPHONE</h3>
-                <p class="card-desc">0505633685</p>
-                <p class="card-desc">0709875141</p>
-            </div>
-            <div class="card">
-                <h3 class="card-titre">LOCALISATION</h3>
-                <p class="card-desc">Abidjan Bp 0254,Koumassi</p>
-            </div>
-    </div>
-    </section>
-    <section class="section2">
-         <form action="">
-        <h1>CONTACTEZ NOUS </h1>
-        <input type="text" id="name" placeholder="Name" required>
-        <input type="email" id="email" placeholder="E-mail" required>
-        <input type="number" id="phone" placeholder="Phone Number" required>
-        <input type="text" id="name" placeholder="Sujet" required>
-        <textarea name="Message" id="message" placeholder="Message" height="fixed"></textarea>
-        <div class="button">
-            <input type="submit" value="Register">
-        </div>
-    </form>
-    </section>
-    <footer>
+
+    <footer class="border-blue">
             <p>Copyright &copy; 2024 - SKAE Transport</p></br>
     </footer>
 </body>
